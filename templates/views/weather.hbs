@@ -35,31 +35,28 @@
     {{>navbar}}
 
     <!-- main header -->
-
-    <div class="container-fluid main_header">
+    <div class="main_header">
         <div class="row">
-            <div class="col-md-10 col-12 mx-auto">
-                <div class="main_contant">
-                    <form>
-                        <input type="text" class="tamp_form" id="cityName" placeholder="Please Enter Your City Name"
-                            autocomplete="off">
-                        <input type="submit" id="submitBtn" value="submit">
-                    </form>
-                </div>
-                <div class="ft">
-                <div class="tampInfo">
+            <div class="container-fluid main_content">
+                <form class="temp_form">
+                    <input type="text" id="cityName" placeholder="Please Enter Your City Name">
+                    <br>
+                    <input type="submit" value="search" id="submitBtn">
+                    <p id="tamp_err"></p>
+                </form>
+
+                <div class="tempInformation">
                     <div class="top_layer">
-                        <p id="day">Friday |</p>
-                        <p id="today_date"> 15 AUG</p>
+                        <p id="day">Friday</p>
+                        <p id="today_date">15 Aug</p>
                     </div>
                     <div class="main_layer">
-                        <p id="city_names">Get OutPut Here</p>
-                        <div class="middel_layer data_hide">
-                            <p id="tamp"><samp>0</samp><sup>o</sup>c</p>
-                            <p id="tamp_status"><i class="fa fa-cloud"></i></p>
+                        <p id="city_name">Get output here</p>
+                        <div class="middle_layer data_hide">
+                            <p id="temp"><span id="temp_real_val">0</span><sup>o</sup>C</p>
+                            <p id="tamp_status"><i class="fa fa-cloud" aria-hidden="true"></i></p>
                         </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
